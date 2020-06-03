@@ -19,18 +19,31 @@ function renderCart() {
 }
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
-function clearCart() {}
+function clearCart() {
+  // var tableE1 = document.getElementById('cart');
+  // tableE1.removeChild('tr');
 
+}
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
 
   // TODO: Find the table body
+  // var tableE1 = document.getElementById('cart');
+  var tbodyE1 = document.getElementsByTagName('tbody');
 
   // TODO: Iterate over the items in the cart
-  // TODO: Create a TR
-  // TODO: Create a TD for the delete link, quantity,  and the item
-  // TODO: Add the TR to the TBODY and each of the TD's to the TR
+  for (let i = 0; i < allItems.length; i++) {
+    // TODO: Create a TR
+    var tr1 = document.createElement('tr');
+    tbodyE1.(tr1);
+    
+    // console.log(tbodyE1);
+  
 
+    // TODO: Create a TD for the delete link, quantity,  and the item
+    // TODO: Add the TR to the TBODY and each of the TD's to the TR
+
+  }
 }
 
 function removeItemFromCart(event) {
